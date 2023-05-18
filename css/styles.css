@@ -419,6 +419,74 @@ ul.icon-card-footer {
   fill: var(--color-cloud);
 }
 
+.footer-subscribe-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+ .footer-subscribe-wrapper {
+  margin-left: 80px;
+ }
+
+ .footer-input-wrapper {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .footer-subscribe-input {
+   background-color: transparent;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 8px 0 8px 16px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 264px;
+    height: 40px;
+ }
+
+ .footer-subscribe-input:focus {
+    outline: none;
+}
+
+.footer-subscribe-input::placeholder{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.footer-subscribe-button {
+    padding: 8px 24px;
+    display: flex;
+    background-color:var(--color-iris);
+    border: none;
+    border-radius: 4px;
+    transition: background-color var(--anim-duration);
+}
+.footer-subscribe-button:hover {
+    background-color:var(--color-ocean);
+}
+
+.footer-subscribe-button-text {
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
+.footer-subscribe-button-image {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+
+}
+
 /* Modal */
 
 .is-hidden {
