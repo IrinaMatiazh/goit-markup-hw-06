@@ -423,6 +423,7 @@ ul.icon-card-footer {
   display: flex;
   align-items: flex-end;
   gap: 24px;
+  margin-left: 80px;
 }
 
  .footer-subscribe-wrapper {
