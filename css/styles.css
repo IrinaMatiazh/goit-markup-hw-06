@@ -568,6 +568,169 @@ ul.icon-card-footer {
   fill: currentColor;
 }
 
+.modal-text {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+
+.modal-form-field {
+  position: relative;
+  margin-bottom: 8px;
+
+}
+.modal-form-input {
+  padding: 0 40px;
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+
+  transition: var(--anim-duration);
+
+}
+
+.modal-form-input:focus {
+  outline-color: var(--color-iris);
+  box-shadow: 0 0 0 4px rgb(77, 90, 229, 0.25);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  transition: var(--anim-duration);
+  pointer-events: none;
+}
+
+.modal-form-input:focus+.modal-form-icon {
+  fill: var(--color-iris);
+}
+
+.modal-form-message {
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  padding: 8px 16px;
+
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  transition: var(--anim-duration);
+  resize: none;
+}
+
+.modal-form-message::placeholder {
+  font-size: 12px;
+  color: rgba(46, 47, 66, 0.4);
+
+}
+
+.modal-form-message:focus{
+  outline-color: #4d5ae5;
+  box-shadow: 0 0 0 4px rgb(77, 90, 229, 0.25);
+}
+
+.modal-form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.modal-form-agreement-box {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid var(--color-light-slate);
+  border-radius: 2px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0;
+
+  transition: var(--anim-duration);
+  cursor: pointer;
+
+}
+
+.modal-form-agreement-box:checked {
+  background-color: var(--btn-hover-color);
+  border-color: var(--btn-hover-color);
+  background-size: 10px;
+  cursor: pointer;
+}
+
+.modal-privacy {
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 14px;
+ letter-spacing: 0.04em;
+ color:var(--color-light-slate);
+}
+.modal-link {
+  text-decoration: underline;
+  color: var(--color-iris);
+  transition: var(--anim-duration);
+}
+
+.modal-link:hover,
+.modal-link:focus {
+  color: #404bbf;
+}
+
+.modal-button {
+  background-color: var(--color-iris);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 24px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: var(--color-white) var(--anim-duration);
+
+
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--color-ocean);
+}
+
+
 /* Index html styles */
 
 /* Hero section */
