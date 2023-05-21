@@ -659,18 +659,17 @@ ul.icon-card-footer {
 
   border: 1px solid var(--color-light-slate);
   border-radius: 2px;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: 0;
-
   transition: var(--anim-duration);
   cursor: pointer;
 }
 
 .modal-form-agreement-box:checked {
-  background-color: var(--btn-hover-color);
-  border-color: var(--btn-hover-color);
+  background-color: var(--color-iris);
+  border-color: var(--color-iris);
+  background-image: url("../images/icons/icon-checkbox.svg");
   background-size: 10px;
   cursor: pointer;
 }
