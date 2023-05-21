@@ -610,8 +610,6 @@ ul.icon-card-footer {
   position: absolute;
   top: 50%;
   left: 16px;
-  /* height: auto;
-  width: 19px; */
   transform: translateY(-50%);
   transition: var(--anim-duration);
   pointer-events: none;
