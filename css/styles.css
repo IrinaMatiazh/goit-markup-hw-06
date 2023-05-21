@@ -426,66 +426,65 @@ ul.icon-card-footer {
   margin-left: 80px;
 }
 
- .footer-subscribe-wrapper {
+.footer-subscribe-wrapper {
   margin-left: 80px;
- }
-
- .footer-input-wrapper {
-  display: flex;
-  flex-direction: column;
- }
-
- .footer-subscribe-input {
-   background-color: transparent;
-    border: 1px solid #ffffff;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    padding: 8px 0 8px 16px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    width: 264px;
-    height: 40px;
- }
-
- .footer-subscribe-input:focus {
-    outline: none;
 }
 
-.footer-subscribe-input::placeholder{
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
+.footer-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subscribe-input {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 8px 0 8px 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 264px;
+  height: 40px;
+}
+
+.footer-subscribe-input:focus {
+  outline: none;
+}
+
+.footer-subscribe-input::placeholder {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 
 .footer-subscribe-button {
-    padding: 8px 24px;
-    display: flex;
-    background-color:var(--color-iris);
-    border: none;
-    border-radius: 4px;
-    transition: background-color var(--anim-duration);
+  padding: 8px 24px;
+  display: flex;
+  background-color: var(--color-iris);
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--anim-duration);
 }
 .footer-subscribe-button:hover {
-    background-color:var(--color-ocean);
+  background-color: var(--color-ocean);
 }
 
 .footer-subscribe-button-text {
-    margin-right: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: #ffffff;
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .footer-subscribe-button-image {
-    width: 24px;
-    height: 24px;
-    fill: #ffffff;
-
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }
 
 /* Modal */
@@ -517,8 +516,6 @@ ul.icon-card-footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 620px;
-  min-height: 576px;
   background-color: var(--color-dairy);
   padding: 24px;
   border-radius: 4px;
@@ -557,7 +554,7 @@ ul.icon-card-footer {
   color: #ffffff;
   background-color: #404bbf;
   border: none;
-  fill: #ffffff
+  fill: #ffffff;
 }
 .modal-close-img {
   fill: var(--color-navy-blue);
@@ -570,6 +567,7 @@ ul.icon-card-footer {
 
 .modal-text {
   display: flex;
+  margin-top: 40px;
   margin-bottom: 16px;
   justify-content: center;
   font-weight: 500;
@@ -589,7 +587,6 @@ ul.icon-card-footer {
 .modal-form-field {
   position: relative;
   margin-bottom: 8px;
-
 }
 .modal-form-input {
   padding: 0 40px;
@@ -602,7 +599,6 @@ ul.icon-card-footer {
   outline-offset: -2px;
 
   transition: var(--anim-duration);
-
 }
 
 .modal-form-input:focus {
@@ -613,13 +609,15 @@ ul.icon-card-footer {
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 16px;
+  /* height: auto;
+  width: 19px; */
   transform: translateY(-50%);
   transition: var(--anim-duration);
   pointer-events: none;
 }
 
-.modal-form-input:focus+.modal-form-icon {
+.modal-form-input:focus + .modal-form-icon {
   fill: var(--color-iris);
 }
 
@@ -641,17 +639,16 @@ ul.icon-card-footer {
 .modal-form-message::placeholder {
   font-size: 12px;
   color: rgba(46, 47, 66, 0.4);
-
 }
 
-.modal-form-message:focus{
+.modal-form-message:focus {
   outline-color: #4d5ae5;
   box-shadow: 0 0 0 4px rgb(77, 90, 229, 0.25);
 }
 
 .modal-form-agreement {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
@@ -671,7 +668,6 @@ ul.icon-card-footer {
 
   transition: var(--anim-duration);
   cursor: pointer;
-
 }
 
 .modal-form-agreement-box:checked {
@@ -682,11 +678,11 @@ ul.icon-card-footer {
 }
 
 .modal-privacy {
- font-weight: 400;
- font-size: 12px;
- line-height: 14px;
- letter-spacing: 0.04em;
- color:var(--color-light-slate);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
 }
 .modal-link {
   text-decoration: underline;
@@ -721,15 +717,12 @@ ul.icon-card-footer {
   border-radius: 4px;
 
   transition: var(--color-white) var(--anim-duration);
-
-
 }
 
 .modal-button:hover,
 .modal-button:focus {
   background-color: var(--color-ocean);
 }
-
 
 /* Index html styles */
 
